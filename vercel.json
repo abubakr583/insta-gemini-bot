@@ -1,5 +1,8 @@
 {
-  "rewrites": [
-    { "source": "/api/webhook", "destination": "/api/webhook.py" }
+  "crons": [
+    {
+      "path": "/api/check",
+      "schedule": "* * * * *"
+    }
   ]
 }
